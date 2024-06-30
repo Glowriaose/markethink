@@ -1,0 +1,24 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_b_8_852)">
+<path d="M0.512451 20.1503C0.512451 7.26937 7.07089 0.710938 19.9518 0.710938H28.2561C41.137 0.710938 47.6954 7.26937 47.6954 20.1503V28.4545C47.6954 41.3355 41.137 47.8939 28.2561 47.8939H19.9518C7.07089 47.8939 0.512451 41.3355 0.512451 28.4545V20.1503Z" fill="url(#paint0_linear_8_852)"/>
+<path d="M2.01245 20.1503C2.01245 13.948 3.58977 9.53362 6.46245 6.66094C9.33513 3.78826 13.7495 2.21094 19.9518 2.21094H28.2561C34.4584 2.21094 38.8728 3.78826 41.7454 6.66094C44.6181 9.53362 46.1954 13.948 46.1954 20.1503V28.4545C46.1954 34.6569 44.6181 39.0713 41.7454 41.9439C38.8728 44.8166 34.4584 46.3939 28.2561 46.3939H19.9518C13.7495 46.3939 9.33513 44.8166 6.46245 41.9439C3.58977 39.0713 2.01245 34.6569 2.01245 28.4545V20.1503Z" stroke="url(#paint1_linear_8_852)" stroke-width="3"/>
+</g>
+<defs>
+<filter id="filter0_b_8_852" x="-11.4875" y="-11.2891" width="71.1831" height="71.183" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="6"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_8_852"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_8_852" result="shape"/>
+</filter>
+<linearGradient id="paint0_linear_8_852" x1="0.512451" y1="0.710938" x2="24.2301" y2="24.4286" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EBBBBB" stop-opacity="0.3"/>
+<stop offset="1" stop-color="#EAA3A3" stop-opacity="0.1"/>
+</linearGradient>
+<linearGradient id="paint1_linear_8_852" x1="5.4326" y1="5.63109" x2="43.1538" y2="43.3523" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.6"/>
+<stop offset="0.395833" stop-color="white" stop-opacity="0"/>
+<stop offset="0.586815" stop-color="#DA9696" stop-opacity="0"/>
+<stop offset="1" stop-color="#D97E7E" stop-opacity="0.3"/>
+</linearGradient>
+</defs>
+</svg>

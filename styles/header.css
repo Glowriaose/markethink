@@ -1,0 +1,123 @@
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: #2F493B;
+    padding: 1em var(--padding-inline);
+    flex-wrap: wrap;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    gap: 1em;
+}
+
+header ul li a {
+    color: inherit;
+    transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+header ul li a:hover,
+header ul li a:active {
+    text-decoration: underline;
+    opacity: 0.8;
+    color: #FFD700;
+}
+
+header .header__btn button {
+    background: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    color: #FFFFFF;
+    border: 1px solid #EDFF8166;
+}
+
+header .menu img {
+    display: none;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 3em 0.5em;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 2em;
+    }
+}
+
+@media (max-width: 900px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding-block-start: 0;
+    }
+
+    header .menu img {
+        width: 30px;
+        height: 30px;
+        margin: 0.5em;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 5%;
+        
+    }
+
+    header nav,
+    header .header__btn {
+        display: none;
+    }
+
+    header nav.toggled,
+    header .header__btn.toggled {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #000;
+        transition: 0.25s;
+        height: 400px;
+        overflow: hidden;
+        padding: 10em;
+    }
+
+    nav ul {
+        display: block;
+        width: fit-content;
+        margin: 10em auto 0 auto;
+        text-align: center;
+        transition: 0.25s;
+        opacity: 0;
+        height: 500px;
+        padding: 5em;
+    }
+
+    nav ul.toggled {
+        opacity: 1;
+    }
+
+    nav ul li a {
+        margin-bottom: 1em;
+    }
+}
+

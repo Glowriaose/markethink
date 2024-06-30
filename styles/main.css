@@ -1,0 +1,475 @@
+main {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.hero {
+    max-width: 100%;
+    background-color: #2F493B;
+    color: #FFFFFF; 
+    padding: 5rem var(--padding-inline); 
+    text-align: center; 
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.hero .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: 1rem; 
+    text-align: center;
+    margin-block-end: 2em;
+}
+
+.divider-line {
+    height: 2px; 
+    border: none; 
+    background-color: #66766E; 
+    margin: 0 2.5rem; 
+    width: 4%;
+}
+
+.divider span {
+    font-size: 1.8rem;
+    color: #eef1f5;
+    white-space: nowrap;
+}
+
+.hero .intro__text {
+    width: 100%;
+}
+
+.hero .top__text {
+    font-weight: 600;
+    font-size: 90px;
+    margin-block-end: 0.5em;
+    margin-block-start: 0;
+}
+
+.hero p {
+    line-height: 2rem;
+    font-size: 1.3rem;
+    color: #66766E;
+    font-weight: 700;
+}
+
+.hero button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    color: #FFFFFF;
+    border: 1px solid #EDFF8166;
+    margin-block-start: 1.5em;
+    background: linear-gradient(328.68deg, #98AA28 13.03%, #D6FF7E 120.61%);
+}
+
+.hero button:hover {
+    background: linear-gradient(328.68deg, #D6FF7E 13.03%, #98AA28 120.61%);
+    color: #000; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+.hero button:active {
+    background: linear-gradient(328.68deg, #98AA28 13.03%, #D6FF7E 120.61%);
+    transform: scale(0.95); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .hero .top__text {
+        font-size: 70px;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .divider-line {
+        width: 6%;
+    }
+
+    .divider span {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 3rem var(--padding-inline);
+    }
+
+    .hero .top__text {
+        font-size: 50px;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .divider-line {
+        width: 8%;
+    }
+
+    .divider span {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+       padding: 0;
+       place-items: center;
+       padding: 0 1em;
+       margin-block-start: 20em;
+    }
+
+    .hero .top__text {
+        
+        font-size: 36px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        padding: 0 1em;
+        text-align: center;
+        padding-right: 0.5em;
+        
+       
+        
+        text-align: center;
+    }
+
+    .divider-line {
+        width: 10%;
+    }
+
+    .divider span {
+        font-size: 1.2rem;
+    }
+
+    .hero button {
+        font-size: 0.9rem;
+        padding: 0.6rem 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero .intro__text{
+        text-align: center;
+        padding: 0;
+        text-wrap: nowrap;
+        max-width: 50%;
+    }
+    .hero button{
+        font-size: 0.5rem;
+    }
+}
+    .hero .top__text {
+        font-size: 36px;
+        width: 100%;
+        text-align: center;
+    }
+.hero .block__container {
+    max-width: 234px;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.hero .block__container img {
+    max-inline-size: 100%;
+    block-size: auto;
+    margin-block-end: 0;
+    object-fit: cover;
+}
+
+.hero .block__right {
+    max-width: 70px;
+    position: absolute;
+    right: 0;
+    top: 73%;
+    bottom: 0;
+    z-index: 9999;
+}
+
+.hero .block__right img {
+    max-inline-size: 100%;
+    block-size: auto;
+    margin-block-end: 0;
+    object-fit: cover;
+}
+
+.socials__section {
+    max-width: 100%;
+    padding: 0 var(--padding-inline);
+    background-color: #F6FBF9;
+}
+
+.socials__section .socials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    text-align: center;
+    padding-block: 1em;
+}
+
+.socials__section .image__container {
+    max-inline-size: 100%;
+    block-size: auto;
+    margin-block-end: 0;
+    object-fit: cover;
+}
+
+.socials img {
+    width: 80px;
+    height: 80px;
+}
+
+@media (max-width: 500px) {
+    .socials__section .socials {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 80px));
+        margin-inline: auto;
+        padding: 0;
+        
+    }
+}
+
+.agency {
+    padding: 0 var(--padding-inline); 
+    padding-top: 3em;
+    margin-bottom: 1em;
+}
+
+.agency__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1em;
+    text-align: center;
+}
+
+.strategy__text {
+    margin-block-start: 0;
+}
+
+.text__div, .cube-text {
+    margin-inline-start: 2em;
+    color: #78847D;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.cube-text {
+    margin-block-end: 1.5em;
+    margin-top: -0.5em;
+}
+
+.cube {
+    max-inline-size: 100%;
+    block-size: auto;
+    margin-block-end: 0;
+    object-fit: cover; 
+}
+
+.cube h4 {
+    font-size: 1.22rem;
+    color: #253D32;
+    font-weight: 500;
+}
+
+.digital {
+    margin-inline-start: 1.5em;
+}
+
+.cube img {
+    width: 30px;
+    height: 30px; 
+}
+
+.see__more, .see__more a {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: left;
+    gap: 0.9em;
+    color: #A3B938;
+}
+
+.see__more a {
+    margin-inline-start: -7em;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .agency__container {
+        grid-template-columns: repeat(2, 1fr);
+        margin-block-start: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .agency__container {
+        grid-template-columns: 1fr;
+    }
+    
+    .text__div, .cube-text {
+        margin-inline-start: 0;
+    }
+
+    .see__more a {
+        margin-inline-start: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .agency{
+        padding: 0;
+    }
+    .strategy__text {
+        font-size: 1.8rem;
+    }
+    
+    .text__div p, .cube-text p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .see__more a {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* another section */
+.make__section {
+    max-width: 100%;
+    margin-block: 0;
+    padding-inline: 6.3em;
+}
+
+@media (max-width: 768px) {
+    .make__section {
+        padding-inline: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .make__section {
+        padding-inline: 1em;
+    }
+}
+
+.make__think {  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .make__think {
+        flex-direction: column;
+    }
+}
+
+.make__image {
+    max-inline-size: 100%;
+    block-size: auto;
+    margin-block-end: 0;
+    object-fit: cover;
+}
+
+.make__image img {
+    width: 100%;
+    height: 400px;
+    margin-block-end: 1.5em;
+}
+
+@media (max-width: 768px) {
+    .make__image img {
+        height: auto;
+    }
+}
+
+.make__text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #253D32;
+}
+
+@media (max-width: 480px) {
+    .make__text h2 {
+        font-size: 2rem;
+    }
+}
+
+.make__text p {
+    font-size: 1.22rem;
+    color: #78847D;
+    font-weight: 400;
+    line-height: 1.8rem;
+    margin-block-end: 3em;
+}
+
+@media (max-width: 480px) {
+    .make__text p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+}
+
+.make-btn {
+    margin-block-start: 7em;
+    text-align: center;
+    margin-bottom: 0.7em;
+}
+
+@media (max-width: 480px) {
+    .make-btn {
+        margin-block-start: 3em;
+    }
+}
+
+.make-btn button {
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-radius: 50px;
+    padding: 0.8rem 1.5rem;
+    color: #FFFFFF;
+    border: 1px solid #EDFF8166;
+    background: linear-gradient(328.68deg, #98AA28 13.03%, #D6FF7E 120.61%);
+}
+
+.make-btn button:hover {
+    background: linear-gradient(328.68deg, #D6FF7E 13.03%, #98AA28 120.61%);
+    color: #000; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.make-btn button:active {
+    background: linear-gradient(328.68deg, #98AA28 13.03%, #D6FF7E 120.61%);
+    transform: scale(0.95); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+@media only screen and (max-width:900px){
+    .hero .block__container, .hero .block__right{
+display: none;
+    }
+    }
