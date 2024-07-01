@@ -1,4 +1,4 @@
-// scripts/menu-toggle.js
+
 document.addEventListener('DOMContentLoaded', function() {
     const menuIcon = document.querySelector('.menu img');
     const nav = document.querySelector('nav');
